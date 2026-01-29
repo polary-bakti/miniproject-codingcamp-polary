@@ -1,0 +1,20 @@
+// Fungsi untuk menyapa pengguna
+function greetUser() {
+    let userName = prompt("Masukkan nama Anda:");
+    if (userName) {
+        document.getElementById("welcome-speech").innerHTML = "Halo, " + userName + "!";
+    }
+}
+
+// Fungsi untuk validasi form
+function validateForm() {
+    let name = document.getElementById("name-input").value;
+    let email = document.getElementById("email-input").value;
+    let message = document.getElementById("message-input").value;
+
+    if (name === "" || email === "" || message === "") {
+        alert("Harap isi semua bidang.");
+    } else {
+        alert("Terima kasih atas pesannya, " + name + "!");
+    }
+}
